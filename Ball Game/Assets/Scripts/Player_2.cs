@@ -12,7 +12,7 @@ public class Player_2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        float mousePosInUnits = (Input.mousePosition.y / Screen.width * 20) - 5;
+        float mousePosInUnits = (Input.mousePosition.y / Screen.height * 10) - 5;
 
 
         Vector3 newPaddlePos = new Vector3(gameObject.transform.position.x, mousePosInUnits, gameObject.transform.position.z);
