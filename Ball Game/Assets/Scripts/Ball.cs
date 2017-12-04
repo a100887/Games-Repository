@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour {
 
+    public float xSpeed;
     Player_2 player2;
     Vector3 ballPaddleDiff;
 
@@ -27,7 +28,7 @@ public class Ball : MonoBehaviour {
         if (Input.GetMouseButtonDown(0) && !gameStarted) //The zero parameter is because the left mouse button is zero in unity
         {
             gameStarted = true;
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(-6f, 9f);
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(xSpeed, 9f);
         }
 
     }

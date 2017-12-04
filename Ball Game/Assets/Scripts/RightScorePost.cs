@@ -5,10 +5,12 @@ using UnityEngine.UI;
 
 public class RightScorePost : MonoBehaviour {
 
-    LevelManager levelManager = new LevelManager();
-
     public Text scoreP1Text;
+    public string nextLevel;
+    public int maxScore;
     int scoreP1 = 0;
+
+    LevelManager levelManager = new LevelManager();
 
     // Use this for initialization
     void Start () {
@@ -25,9 +27,9 @@ public class RightScorePost : MonoBehaviour {
         scoreP1++;
         scoreP1Text.text = "Player 1 Score: " + scoreP1;
 
-        if (scoreP1 >= 5)
+        if (scoreP1 >= maxScore)
         {
-            levelManager.LoadLevel("Level_02");
+            levelManager.LoadLevel(nextLevel);
         }
     }
 }
