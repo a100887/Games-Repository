@@ -5,31 +5,44 @@ using UnityEngine;
 public class Ball : MonoBehaviour {
 
     public float xSpeed;
-    Player_2 player2;
-    Vector3 ballPaddleDiff;
-
+    float ballDirection;
+    Vector3 ballPos;
     bool gameStarted = false;
 
     // Use this for initialization
     void Start () {
 
-        player2 = GameObject.FindObjectOfType<Player_2>();
-        ballPaddleDiff = this.transform.position - player2.transform.position;
+        ballPos = gameObject.transform.position;
+        ballDirection = xSpeed;
     }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if (!gameStarted) //if(gameStarted == false)
+        if (!gameStarted)
         {
-            this.transform.position = player2.transform.position + ballPaddleDiff;
+            gameObject.transform.position = ballPos;
         }
 
-        if (Input.GetMouseButtonDown(0) && !gameStarted) //The zero parameter is because the left mouse button is zero in unity
+        if (Input.GetMouseButtonDown(0) && !gameStarted)
         {
             gameStarted = true;
-            this.GetComponent<Rigidbody2D>().velocity = new Vector2(xSpeed, 9f);
+            this.GetComponent<Rigidbody2D>().velocity = new Vector2(ballDirection, 9f);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.transform.gameObject.name == "RightScorePost")
+        {
+            gameStarted = false;
+            ballDirection = xSpeed;
         }
 
+        else if (collision.transform.gameObject.name == "LeftScorePost")
+        {
+            gameStarted = false;
+            ballDirection = -xSpeed;
+        }
     }
 }

@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Player_1 : MonoBehaviour {
 
-    private Rigidbody2D myRigidBody;
-
 	// Use this for initialization
 	void Start () {
 		
@@ -27,9 +25,5 @@ public class Player_1 : MonoBehaviour {
             newPlayer1Pos = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y - 0.3f, gameObject.transform.position.z);
             gameObject.transform.position = newPlayer1Pos;
         }
-
-        
-
     }
-
 }

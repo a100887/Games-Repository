@@ -24,4 +24,11 @@ public class LevelManager : MonoBehaviour {
     {
         UnityEditor.EditorApplication.isPlaying = false;
     }
+
+    public void RestartGame(string restartScene)
+    {
+        RightScorePost.scoreP1 = 0;
+        LeftScorePost.scoreP2 = 0;
+        LoadLevel(restartScene);
+    }
 }

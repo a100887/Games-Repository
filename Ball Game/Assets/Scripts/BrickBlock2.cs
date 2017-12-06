@@ -31,6 +31,5 @@ public class BrickBlock2 : MonoBehaviour {
         {
             check = true;
         }
-
     }
 }

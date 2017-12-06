@@ -8,7 +8,7 @@ public class LeftScorePost : MonoBehaviour {
     public int maxScore;
     public string nextLevel;
     public Text scoreP2Text;
-    int scoreP2 = 0;
+    public static int scoreP2 = 0;
 
     LevelManager levelManager = new LevelManager();
 
