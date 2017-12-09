@@ -29,6 +29,8 @@ public class LevelManager : MonoBehaviour {
     {
         RightScorePost.scoreP1 = 0;
         LeftScorePost.scoreP2 = 0;
+        RightScorePost.highScoreP1 = 0;
+        LeftScorePost.highScoreP2 = 0;
         LoadLevel(restartScene);
     }
 }

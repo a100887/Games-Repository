@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: e1417bb0fe8e91e4dae7c73f67b056b0
+timeCreated: 1512667695
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Voice In My Head
+  fontNames:
+  - Voice In My Head
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
