@@ -62,3 +62,4 @@ G:\4.2\Programming in Computer Games\Games-Repository\Ball Game\obj\Debug\Assemb
 G:\4.2\Programming in Computer Games\Games-Repository\Ball Game\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
 G:\4.2\Programming in Computer Games\Games-Repository\Ball Game\obj\Debug\Assembly-CSharp.dll
 G:\4.2\Programming in Computer Games\Games-Repository\Ball Game\obj\Debug\Assembly-CSharp.pdb
+G:\4.2\Programming in Computer Games\Games-Repository\Ball Game\Temp\bin\Debug\Facebook.Unity.Settings.dll
